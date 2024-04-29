@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- SEO Meta Tags -->
+    <meta name="author" content="6bslash52">
+    <meta name="description" content="console">
+    <meta name="keywords" content="console, 6bslash52">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/defaults/favicon.ico?v=1.0">
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="/assets/css/styles.min.css?ver=1714387473">
+    <title>Cookies | 6bslash52.github.io</title>
+    <!-- Global site tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3QYLL83Q4"></script>
+    <script>
+      function gtag()
+      {
+        dataLayer.push(arguments)
+      }
+      window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "G-Y3QYLL83Q4")
+    </script>
+  </head>
+  <body>
+    <!-- Cookie Modal Console -->
+    <div class="modal cookie-modal-console fade" id="cookieModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="cookieModalLabel" aria-hidden="true" style="z-index:100000">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="cookieModalLabel">Cookie Policy</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex align-items-center opacity-50 mb-2">
+              <i class="bi-clock fs-7 me-2"></i>
+              <span class="fw-light"> March 15, 2024 (05:53:03 PM) </span>
+            </div>
+            <p> Google Analytics is a web analytics tool that this page may use to help understand how visitors engage with the Website in question. It reports website trends using cookies and web beacons without identifying individual visitors. You can read about Google Analytics <a class="console-link" href="https://marketingplatform.google.com/about/" target="_blank">here</a>. </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-light" onclick="acceptCookiesToast()">Reset</button>
+            <button type="button" class="btn btn-dark" data-bs-dismiss="modal" onclick="acceptCookiesToast()">Understood</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="consolePage" class="p-0 font-monospace">
+      <div class="container-fluid">
+        <div class="row gx-0">
+          <div class="col">
+            <div class="console">
+              <div class="mt-2">
+                <h1>Cookies</h1>
+                <p> Google Analytics is a web analytics tool that this page may use to help understand how visitors engage with the Website in question. It reports website trends using cookies and web beacons without identifying individual visitors. You can read about Google Analytics <a class="console-link" href="https://marketingplatform.google.com/about/" target="_blank">here</a>. </p>
+                <!-- Cookie Modal Trigger -->
+                <button type="button" class="btn btn-sm btn-outline-light mb-2" data-bs-toggle="modal" data-bs-target="#cookieModal"> Cookie settings </button>
+              </div>
+              <div class="output"></div>
+              <div class="action cookies" data-aos="fade-in" data-aos-delay="200" data-aos-offset="-1000">
+                <span class="text-nowrap">6bslash52@user/cookies:</span>
+                <textarea class="input console-sim-input" name="input" cols="30" rows="1" contenteditable="true" autofocus></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Cookie Toast Console -->
+    <div id="cookieToastAlert" class="position-absolute p-3" style="z-index:99999;top:50%;left:50%;transform:translate(-50%,-50%)">
+      <div id="cookieToast" class="toast toast-cookie toast-cookie-console d-block show" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <i class="bi-exclamation-circle-fill fs-6 me-2"></i>
+          <strong class="me-auto">Cookie Alert!</strong>
+          <small><span id="cookieShow">10</span></small>
+          <button type="button" class="btn-close toast-cookie-console-btn-close" onclick="acceptCookiesToast()" data-bs-dismiss="toast" aria-label="Close">
+            <i class="bi-x-lg"></i>
+          </button>
+        </div>
+        <div class="toast-body text-body">
+          <p class="cookie-alert-message">
+            <span>By continuing the use of this site you accept our <a class="console-link" href="#" data-bs-toggle="modal" data-bs-target="#cookieModal">Cookie Policy</a>.</span>
+          </p>
+          <form class="cookie-accept-wrapper float-start pt-1">
+            <input id="cookieToastAcceptBtn" onclick="acceptCookiesToast()" type="checkbox" class="btn-check" autocomplete="off">
+            <label class="btn btn-sm btn-outline-light px-3" for="cookieToastAcceptBtn">OK</label>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- JS Libs -->
+    <script src="/assets/js/libs/packages.js?ver=1714387473"></script>
+    <!-- Javascript -->
+    <script src="/assets/js/main.min.js?ver=1714387473"></script>
+  </body>
+</html>
